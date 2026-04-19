@@ -1,0 +1,461 @@
+SQL> CREATE TABLE employees (
+  2      emp_id NUMBER PRIMARY KEY,
+  3      name VARCHAR2(50),
+  4      department VARCHAR2(50),
+  5      experience NUMBER,
+  6      salary NUMBER,
+  7      city VARCHAR2(50)
+  8  );
+
+Table created.
+
+SQL> INSERT ALL
+  2  INTO employees VALUES (101,'Anil','IT',5,60000,'Pune')
+  3  INTO employees VALUES (102,'Sunita','HR',7,55000,'Mumbai')
+  4  INTO employees VALUES (103,'Rohit','IT',3,45000,'Pune')
+  5  INTO employees VALUES (104,'Neha','Finance',8,70000,'Nagpur')
+  6  INTO employees VALUES (105,'Ajay','HR',2,35000,'Mumbai')
+  7  INTO employees VALUES (106,'Pooja','Finance',6,65000,'Pune')
+  8  INTO employees VALUES (107,'Karan','IT',4,50000,'Mumbai')
+  9  INTO employees VALUES (108,'Ritika','HR',9,72000,'Nagpur')
+ 10  INTO employees VALUES (109,'Amit','Finance',10,90000,'Mumbai')
+ 11  INTO employees VALUES (110,'Sneha','IT',1,30000,'Pune')
+ 12  INTO employees VALUES (111,'Rahul','HR',6,58000,'Nagpur')
+ 13  INTO employees VALUES (112,'Meena','Finance',7,75000,'Mumbai')
+ 14  INTO employees VALUES (113,'Arjun','IT',2,40000,'Pune')
+ 15  INTO employees VALUES (114,'Kavita','HR',5,52000,'Nagpur')
+ 16  INTO employees VALUES (115,'Deepak','Finance',3,48000,'Mumbai')
+ 17  INTO employees VALUES (116,'Nisha','IT',8,85000,'Pune')
+ 18  INTO employees VALUES (117,'Vikas','HR',4,45000,'Mumbai')
+ 19  INTO employees VALUES (118,'Simran','Finance',9,88000,'Nagpur')
+ 20  INTO employees VALUES (119,'Manoj','IT',6,62000,'Mumbai')
+ 21  INTO employees VALUES (120,'Anita','HR',1,30000,'Pune')
+ 22  INTO employees VALUES (121,'Sachin','Finance',5,68000,'Nagpur')
+ 23  INTO employees VALUES (122,'Priya','IT',7,78000,'Mumbai')
+ 24  INTO employees VALUES (123,'Ramesh','HR',3,40000,'Pune')
+ 25  INTO employees VALUES (124,'Tina','Finance',2,42000,'Mumbai')
+ 26  INTO employees VALUES (125,'Aakash','IT',9,92000,'Nagpur')
+ 27  INTO employees VALUES (126,'Geeta','HR',8,70000,'Pune')
+ 28  INTO employees VALUES (127,'Varun','Finance',4,55000,'Mumbai')
+ 29  INTO employees VALUES (128,'Shreya','IT',6,64000,'Nagpur')
+ 30  INTO employees VALUES (129,'Harsh','HR',10,95000,'Mumbai')
+ 31  INTO employees VALUES (130,'Lata','Finance',1,32000,'Pune')
+ 32  SELECT * FROM dual;
+
+30 rows created.
+
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> SELECT * FROM employees;
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+       101 Anil                                                                 
+IT                                                          5      60000        
+Pune                                                                            
+                                                                                
+       102 Sunita                                                               
+HR                                                          7      55000        
+Mumbai                                                                          
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+                                                                                
+       103 Rohit                                                                
+IT                                                          3      45000        
+Pune                                                                            
+                                                                                
+       104 Neha                                                                 
+Finance                                                     8      70000        
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+Nagpur                                                                          
+                                                                                
+       105 Ajay                                                                 
+HR                                                          2      35000        
+Mumbai                                                                          
+                                                                                
+       106 Pooja                                                                
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+Finance                                                     6      65000        
+Pune                                                                            
+                                                                                
+       107 Karan                                                                
+IT                                                          4      50000        
+Mumbai                                                                          
+                                                                                
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+       108 Ritika                                                               
+HR                                                          9      72000        
+Nagpur                                                                          
+                                                                                
+       109 Amit                                                                 
+Finance                                                    10      90000        
+Mumbai                                                                          
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+                                                                                
+       110 Sneha                                                                
+IT                                                          1      30000        
+Pune                                                                            
+                                                                                
+       111 Rahul                                                                
+HR                                                          6      58000        
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+Nagpur                                                                          
+                                                                                
+       112 Meena                                                                
+Finance                                                     7      75000        
+Mumbai                                                                          
+                                                                                
+       113 Arjun                                                                
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+IT                                                          2      40000        
+Pune                                                                            
+                                                                                
+       114 Kavita                                                               
+HR                                                          5      52000        
+Nagpur                                                                          
+                                                                                
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+       115 Deepak                                                               
+Finance                                                     3      48000        
+Mumbai                                                                          
+                                                                                
+       116 Nisha                                                                
+IT                                                          8      85000        
+Pune                                                                            
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+                                                                                
+       117 Vikas                                                                
+HR                                                          4      45000        
+Mumbai                                                                          
+                                                                                
+       118 Simran                                                               
+Finance                                                     9      88000        
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+Nagpur                                                                          
+                                                                                
+       119 Manoj                                                                
+IT                                                          6      62000        
+Mumbai                                                                          
+                                                                                
+       120 Anita                                                                
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+HR                                                          1      30000        
+Pune                                                                            
+                                                                                
+       121 Sachin                                                               
+Finance                                                     5      68000        
+Nagpur                                                                          
+                                                                                
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+       122 Priya                                                                
+IT                                                          7      78000        
+Mumbai                                                                          
+                                                                                
+       123 Ramesh                                                               
+HR                                                          3      40000        
+Pune                                                                            
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+                                                                                
+       124 Tina                                                                 
+Finance                                                     2      42000        
+Mumbai                                                                          
+                                                                                
+       125 Aakash                                                               
+IT                                                          9      92000        
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+Nagpur                                                                          
+                                                                                
+       126 Geeta                                                                
+HR                                                          8      70000        
+Pune                                                                            
+                                                                                
+       127 Varun                                                                
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+Finance                                                     4      55000        
+Mumbai                                                                          
+                                                                                
+       128 Shreya                                                               
+IT                                                          6      64000        
+Nagpur                                                                          
+                                                                                
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+       129 Harsh                                                                
+HR                                                         10      95000        
+Mumbai                                                                          
+                                                                                
+       130 Lata                                                                 
+Finance                                                     1      32000        
+Pune                                                                            
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+                                                                                
+
+30 rows selected.
+
+SQL> SELECT AVG(salary) AS avg_salary FROM employees;
+
+AVG_SALARY                                                                      
+----------                                                                      
+     59700                                                                      
+
+SQL> SELECT * FROM employees
+  2  WHERE salary = (SELECT MAX(salary)
+  3  FROM employees);
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+       129 Harsh                                                                
+HR                                                         10      95000        
+Mumbai                                                                          
+                                                                                
+
+SQL> SELECT department, AVG(salary) AS
+  2  avg_salary
+  3  FROM employees
+  4  GROUP BY department;
+
+DEPARTMENT                                         AVG_SALARY                   
+-------------------------------------------------- ----------                   
+IT                                                      60600                   
+HR                                                      55200                   
+Finance                                                 63300                   
+
+SQL> SELECT * FROM employees
+  2  WHERE experience > 5;
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+       102 Sunita                                                               
+HR                                                          7      55000        
+Mumbai                                                                          
+                                                                                
+       104 Neha                                                                 
+Finance                                                     8      70000        
+Nagpur                                                                          
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+                                                                                
+       106 Pooja                                                                
+Finance                                                     6      65000        
+Pune                                                                            
+                                                                                
+       108 Ritika                                                               
+HR                                                          9      72000        
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+Nagpur                                                                          
+                                                                                
+       109 Amit                                                                 
+Finance                                                    10      90000        
+Mumbai                                                                          
+                                                                                
+       111 Rahul                                                                
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+HR                                                          6      58000        
+Nagpur                                                                          
+                                                                                
+       112 Meena                                                                
+Finance                                                     7      75000        
+Mumbai                                                                          
+                                                                                
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+       116 Nisha                                                                
+IT                                                          8      85000        
+Pune                                                                            
+                                                                                
+       118 Simran                                                               
+Finance                                                     9      88000        
+Nagpur                                                                          
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+                                                                                
+       119 Manoj                                                                
+IT                                                          6      62000        
+Mumbai                                                                          
+                                                                                
+       122 Priya                                                                
+IT                                                          7      78000        
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+Mumbai                                                                          
+                                                                                
+       125 Aakash                                                               
+IT                                                          9      92000        
+Nagpur                                                                          
+                                                                                
+       126 Geeta                                                                
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+HR                                                          8      70000        
+Pune                                                                            
+                                                                                
+       128 Shreya                                                               
+IT                                                          6      64000        
+Nagpur                                                                          
+                                                                                
+
+    EMP_ID NAME                                                                 
+---------- --------------------------------------------------                   
+DEPARTMENT                                         EXPERIENCE     SALARY        
+-------------------------------------------------- ---------- ----------        
+CITY                                                                            
+--------------------------------------------------                              
+       129 Harsh                                                                
+HR                                                         10      95000        
+Mumbai                                                                          
+                                                                                
+
+15 rows selected.
+
+SQL> SPOOL OFF
